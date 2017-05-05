@@ -1,0 +1,9 @@
+[submodule "fast-rcnn"]
+	path = fast-rcnn
+	url = https://github.com/rbgirshick/fast-rcnn.git
+[submodule "edges"]
+	path = edges
+	url = https://github.com/pdollar/edges.git
+[submodule "toolbox"]
+	path = toolbox
+	url = https://github.com/pdollar/toolbox.git
