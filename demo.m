@@ -27,6 +27,7 @@ file_output_bbox = [dir_results, 'bbox_img.mat'];
 % Set hyper-parameters
 flag_visualize = true;
 size_img_max = 227;
+id_category = 1; % '1' represents upper-body clothes, '2' represents lower-body clothes, '3' represents full-body clothes 
 
 % Initialize EdgeBox model
 model_edgebox = load(file_model_edgebox);
@@ -96,18 +97,19 @@ end
 disp('### Fast R-CNN completed: ');
 toc;
 
-% Get predicted bounding boxes w.r.t resized image
-bbox_pred = bbox_pred{1};
-
 % Transform bounding box back into original coordinates w.r.t input image
-bbox_img(:, 1:4) = bbox_pred(:, 1:4) ./ ratio;
-bbox_img(:, 5) = bbox_pred(:, 5);
+bbox_img = cell(3, 1);
+for id_category = 1:3
+	bbox_img{id_category}(:, 1:4) = bbox_pred{id_category}(:, 1:4) ./ ratio;
+	bbox_img{id_category}(:, 5) = bbox_pred{id_category}(:, 5);
+end
 
-% Visualize the top-2 detection results
+% Visualize the most salient detection results for upper-body clothes, lower-body clothes and full-body clothes respectively
 if flag_visualize
 	figure(1);
-	subplot(1, 2, 1); showboxes(img_cur, bbox_img(1, :));
-	subplot(1, 2, 2); showboxes(img_cur, bbox_img(2, :));
+	subplot(1, 3, 1); showboxes(img_cur, bbox_img{1}(1, :)); title('Upper-body Clothes');
+	subplot(1, 3, 2); showboxes(img_cur, bbox_img{2}(1, :)); title('Lower-body Clothes');
+	subplot(1, 3, 3); showboxes(img_cur, bbox_img{3}(1, :)); title('Full-body Clothes');
 end
 
 % Save bounding box outputs
