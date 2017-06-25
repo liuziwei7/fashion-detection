@@ -1,7 +1,7 @@
 ## Fashion Detection in the Wild
 [[Project]](http://personal.ie.cuhk.edu.hk/~lz013/projects/DeepFashion.html) [[Paper]](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Liu_DeepFashion_Powering_Robust_CVPR_2016_paper.pdf)   
 
-<img src='./misc/demo.gif' width=540>
+<img src='./misc/demo.gif' width=360>
 
 ## Overview
 It is a clothes detection framework based on [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn). Given a fashion image, this software finds and localizes potential `upper-body clothes`, `lower-body clothes` and `full-body clothes` in it, respectively. 
