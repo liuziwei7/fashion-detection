@@ -1,4 +1,4 @@
-name: "CaffeNet"
+name: "fashion_detector"
 input: "data"
 input_shape {
   dim: 1

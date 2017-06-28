@@ -4,7 +4,7 @@
 <img src='./misc/demo.gif' width=360>
 
 ## Overview
-It is a clothes detection framework based on [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn). Given a fashion image, this software finds and localizes potential `upper-body clothes`, `lower-body clothes` and `full-body clothes` in it, respectively. 
+`Deep Clothes Detector` is a clothes detection framework based on [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn). Given a fashion image, this software finds and localizes potential *upper-body clothes*, *lower-body clothes* and *full-body clothes* in it, respectively. 
 
 <img src='./misc/demo_teaser.jpg' width=800>
 
@@ -29,7 +29,9 @@ matlab ./demo.m
 ## Dataset
 [Large-scale Fashion (DeepFashion) Database](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)
 
-## Citation
+## License and Citation
+The use of this software is RESTRICTED to **non-commercial research and educational purposes**.
+
 ```
 @inproceedings{liu2016deepfashion,
  author = {Ziwei Liu, Ping Luo, Shi Qiu, Xiaogang Wang, and Xiaoou Tang},
