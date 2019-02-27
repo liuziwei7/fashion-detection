@@ -8,7 +8,7 @@
 
 <img src='./misc/demo_teaser.jpg' width=800>
 
-Further information please contact [Ziwei Liu](http://personal.ie.cuhk.edu.hk/~lz013/).
+Further information please contact [Tingwu Wang](http://www.cs.toronto.edu/~tingwuwang/) and [Ziwei Liu](https://liuziwei7.github.io/).
 
 ## Requirements
 * [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn)
