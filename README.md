@@ -17,7 +17,7 @@ Further information please contact [Tingwu Wang](http://www.cs.toronto.edu/~ting
 
 ## Getting started
 * Install and compile the [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn), [EdgeBox](https://github.com/pdollar/edges) and [Piotr's Computer Vision Toolbox](https://github.com/pdollar/toolbox) libraries.
-* Download the pre-trained model [fashion_detector.caffemodel](https://drive.google.com/open?id=0B7EVK8r0v71pUlZjeGZuNWZLaFU):
+* Download the pre-trained model [fashion_detector.caffemodel](https://drive.google.com/file/d/0B7EVK8r0v71pUlZjeGZuNWZLaFU/view?usp=sharing&resourcekey=0-JolmdxQ_-MhjZBWA65NcKg):
 ``` bash
 Place "fashion_detector.caffemodel" into "./models/" 
 ```
